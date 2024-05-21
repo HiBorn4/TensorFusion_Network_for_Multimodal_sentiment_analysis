@@ -70,7 +70,7 @@ TFN outperformed state-of-the-art approaches in binary sentiment classification,
 
 2. Install the required Python libraries:
    ```bash
-   pip install -r requirements.txt
+   pip3 install -r requirements.txt
    ```
 
 ### Dataset Preparation
@@ -82,19 +82,19 @@ TFN outperformed state-of-the-art approaches in binary sentiment classification,
 
 1. Preprocess the dataset:
    ```bash
-   python preprocess.py --data_dir data/CMU-MOSI
+   python3 preprocess.py --data_dir data/CMU-MOSI
    ```
 
 2. Train the TFN model:
    ```bash
-   python train.py --config configs/tfn_config.json
+   python3 train.py --config configs/tfn_config.json
    ```
 
 ### Evaluation
 
 Evaluate the trained model on the test set:
 ```bash
-python evaluate.py --model_dir models/tfn --data_dir data/CMU-MOSI
+python3 evaluate.py --model_dir models/tfn --data_dir data/CMU-MOSI
 ```
 
 ### Configuration
